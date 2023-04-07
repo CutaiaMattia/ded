@@ -1,0 +1,41 @@
+
+
+
+
+.grid-container3 {
+  /*---------ESPOSIZZIONE IN LINEA PER SMARTPHONE-------------*/
+  display: grid; /*---------dichiarazione del display sul contenitore generale-------------*/
+  gap: 1em;
+  grid-template-areas: "uno" "due" "tre" "quatro" "cinque"; /*---------definisci gli elementi per il meotodo grid-------------*/
+}
+
+.elemento-tris:nth-child(1) {
+  /*---------prendi l'elemento figlio (X)-------------*/
+  grid-area: uno;
+}
+
+.elemento-tris:nth-child(2) {
+  grid-area: due;
+}
+
+.elemento-tris:nth-child(3) {
+  grid-area: tre; /*---------associazzione al valore x al elemento-------------*/
+}
+
+.elemento-tris:nth-child(4) {
+  grid-area: quatro;
+}
+
+.elemento-tris:nth-child(5) {
+  grid-area: cinque;
+}
+
+
+.grid-container3 {
+  grid-template-areas:
+    "uno"
+    "due"
+    "tre"
+    "quatro"
+    "cinque"
+}

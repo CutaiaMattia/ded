@@ -1,0 +1,72 @@
+.elemento-bis:nth-child(1),
+.elemento-bis:nth-child(2),
+.elemento-bis:nth-child(3),
+.elemento-bis:nth-child(4),
+.elemento-bis:nth-child(5),
+.elemento-bis:nth-child(6),
+.elemento-bis:nth-child(7) {
+  max-height: 30px;
+}
+.elemento-bis:nth-child(1),
+.elemento-bis:nth-child(3),
+.elemento-bis:nth-child(4),
+.elemento-bis:nth-child(5),
+.elemento-bis:nth-child(6),
+.elemento-bis:nth-child(7) {
+  max-width: 200px;
+}
+
+.elemento-bis:nth-child(2) {
+  max-width: 300px;
+}
+
+.elemento-bis p{
+  margin: 0;
+}
+
+.grid-container2 {
+  /*---------ESPOSIZZIONE IN LINEA PER SMARTPHONE-------------*/
+  display: grid; /*---------dichiarazione del display sul contenitore generale-------------*/
+  gap: 1em;
+  border: 1px solid rgb(43, 43, 43);
+  max-height: 250px;
+  grid-template-areas: "uno" "due" "tre" "quatro" "cinque" "sei" "sette" "otto"; /*---------definisci gli elementi per il meotodo grid-------------*/
+}
+
+.elemento-bis:nth-child(1) {
+  /*---------prendi l'elemento figlio (X)-------------*/
+  grid-area: uno;
+}
+
+.elemento-bis:nth-child(2) {
+  grid-area: due;
+}
+
+.elemento-bis:nth-child(3) {
+  grid-area: tre; /*---------associazzione al valore x al elemento-------------*/
+}
+
+.elemento-bis:nth-child(4) {
+  grid-area: quatro;
+}
+
+.elemento-bis:nth-child(5) {
+  grid-area: cinque;
+}
+
+.elemento-bis:nth-child(6) {
+  grid-area: sei;
+}
+
+.elemento-bis:nth-child(7) {
+  grid-area: sette;
+}
+.elemento-bis:nth-child(8) {
+  grid-area: otto;
+}
+
+.grid-container2 {
+  grid-template-areas:
+    "uno due quatro tre otto"
+    "cinque sei sette . otto";
+}
